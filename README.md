@@ -78,7 +78,7 @@ Use "Remote Tunnels: Connect to Tunnel..." action locally.
 
 ## Graphics
 
-Enable Tailscale tunnel:
+Install [Tailscale](https://tailscale.com/) on your machine and also enable the Tailscale tunnel on the VM:
 ```bash
 sudo tailscale up
 ```
@@ -88,7 +88,7 @@ Set user password:
 sudo passwd $USER
 ```
 
-Use [Microsoft Remote Desktop](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466) to connect. There will be no window manager, but that's okay.
+Use [Microsoft Remote Desktop](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466) to connect. Simply use "fuchsia-lab" as the "PC name", since Tailscale should take care of resolving the IP address. There will be no window manager, but that's okay.
 
 Start emulator in your SSH session (not the remote desktop):
 ```bash
